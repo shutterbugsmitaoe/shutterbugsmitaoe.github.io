@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Registration Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<!--link rel="icon" type="image/png" href=-->
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	<style>
+		body {
+		  	background-image: url('old_camera.png');
+    		align-items: center;
+    		justify-content: center;
+    		min-height: 100vh;
+    		max-width: 100vw;
+    		padding-bottom: 0px;
+		}
+		</style>
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off" class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					<div class="header">
+					Registration Form
+				</div>
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">Full Name</span>
+					<input class="input100" type="text" id="name" name="entry.444881662" placeholder="Enter your name" required>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="label-input100">Email</span>
+					<input class="input100" type="text" id="email" name="entry.1283842188" placeholder="Enter your email addess"required>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Phone Number is required">
+					<span class="label-input100">Contact Number</span>
+					<input class="input100" type="text" id="phone" name="entry.1671147661" placeholder="Enter your Contact Number" pattern="^\d{10}$"required>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" >
+					<span class="label-input100">Branch</span>
+					<input class="input100" type="text" id="branch" name="entry.1452144700" placeholder="Enter your Branch" required>
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100 validate-input" >
+					<span class="label-input100">What is Photography for you ?</span>
+					<textarea class="input100" type="text" id="q1" name="entry.1677090272" placeholder="Your Answer Here" required></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" >
+					<span class="label-input100">Why do you want to join Shutterbugs?</span>
+					<textarea class="input100" type="text" id="q2" name="entry.1912420050" placeholder="Your Answer Here" required></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" >
+					<span class="label-input100">Anything else you want to add?</span>
+					<textarea class="input100" type="text" id="q3" name="entry.152603613" placeholder="Your Answer Here" required></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn">
+							<span>
+								Submit
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+
+<script>
+	function postToGoogle() {
+					var field1 = $("#name").val();
+					var field2 = $("#email").val();
+					var field3 = $("#phone").val();
+					var field4 = $("#branch").val();
+					var field5 = $("#q1").val();
+					var field6 = $("#q2").val();
+					var field7 = $("#q3").val();
+
+					 
+					if(field1 == ""){
+						alert('Please Fill Your Name');
+						document.getElementById("name").focus();
+						return false;
+					}
+					if(field2 == ""){
+						alert('Please Fill Your Email');
+						document.getElementById("email").focus();
+						return false;
+					}
+					if(field3 == "" || field3.length > 10 || field3.length < 10){
+						alert('Please Fill Your Mobile Number');
+						document.getElementById("phone").focus();
+						return false;
+					}
+		
+					$.ajax({
+						url: "https://docs.google.com/forms/d/e/1FAIpQLSeJ7O4-UBn56fKTxvgK_01nto58e0vfvtEppYfAYS2Fzbo6Cw/formResponse?",
+						data: {"entry.444881662": field1, "entry.1283842188": field2, "entry.1671147661": field3, "entry.1452144700": field4, "entry.1677090272": field5, "entry.1912420050": field6, "entry.152603613": field7},
+						type: "POST",
+						dataType: "xml",
+						success: function(d)
+						{
+						},
+						error: function(x, y, z)
+							{
+	
+								$('#success-msg').show();
+								$('#form').show();
+								
+							} 
+					});
+					
+					setTimeout("location.href = 'thankyou.html';",1000); 
+					return false;
+
+				}
+
+	</script>
+
+</body>
+</html>
