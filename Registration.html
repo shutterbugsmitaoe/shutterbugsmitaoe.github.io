@@ -69,6 +69,12 @@
 					<input class="input100" type="text" id="branch" name="entry.1452144700" placeholder="Enter your Branch" required>
 					<span class="focus-input100"></span>
 				</div>
+
+				<div class="wrap-input100 validate-input" >
+					<span class="label-input100">Year</span>
+					<input class="input100" type="text" id="year" name="entry.636611048" placeholder="Enter your Year (for ex: FY, SY, TY, BTech)" required>
+					<span class="focus-input100"></span>
+				</div>
 				
 				<div class="wrap-input100 validate-input" >
 					<span class="label-input100">What is Photography for you ?</span>
@@ -84,7 +90,7 @@
 
 				<div class="wrap-input100 validate-input" >
 					<span class="label-input100">Anything else you want to add?</span>
-					<textarea class="input100" type="text" id="q3" name="entry.152603613" placeholder="Your Answer Here" required></textarea>
+					<textarea class="input100" type="text" id="q3" name="entry.152603613" placeholder="Your Answer Here"></textarea>
 					<span class="focus-input100"></span>
 				</div>
 
@@ -147,9 +153,10 @@
 					var field2 = $("#email").val();
 					var field3 = $("#phone").val();
 					var field4 = $("#branch").val();
-					var field5 = $("#q1").val();
-					var field6 = $("#q2").val();
-					var field7 = $("#q3").val();
+					var field5 = $("#year").val();
+					var field6 = $("#q1").val();
+					var field7 = $("#q2").val();
+					var field8 = $("#q3").val();
 
 					 
 					if(field1 == ""){
@@ -170,7 +177,7 @@
 		
 					$.ajax({
 						url: "https://docs.google.com/forms/d/e/1FAIpQLSeJ7O4-UBn56fKTxvgK_01nto58e0vfvtEppYfAYS2Fzbo6Cw/formResponse?",
-						data: {"entry.444881662": field1, "entry.1283842188": field2, "entry.1671147661": field3, "entry.1452144700": field4, "entry.1677090272": field5, "entry.1912420050": field6, "entry.152603613": field7},
+						data: {"entry.444881662": field1, "entry.1283842188": field2, "entry.1671147661": field3, "entry.1452144700": field4, "entry.636611048": field5, "entry.1677090272": field6, "entry.1912420050": field7, "entry.152603613": field8},
 						type: "POST",
 						dataType: "xml",
 						success: function(d)
