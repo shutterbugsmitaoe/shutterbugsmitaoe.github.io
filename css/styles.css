@@ -6168,10 +6168,6 @@ a.close.disabled {
 
 
  
-}
-
-
-}
 
 .bg-info {
   background-color: #17a2b8 !important;
@@ -10692,7 +10688,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     background-color: #000;
     border-color: #000;
   }
-  .     
+  
 .footrow{
   /*padding-bottom: 10%;*/
 }
@@ -10702,8 +10698,9 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
   .carousel-button{
     position: absolute;
-    margin-left:-45px;
-    margin-top:-75px;
+    margin-left:25%;
+    margin-top:-42%;
+    scale: 0.5;
   }
 }
 
