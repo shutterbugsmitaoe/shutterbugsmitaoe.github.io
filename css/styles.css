@@ -4500,7 +4500,9 @@ input[type=button].btn-block {
   padding: 1.25rem;
 }
 
-.card-img,
+.card-img{
+  width: 100%;
+}
 .card-img-top,
 .card-img-bottom {
   flex-shrink: 0;
@@ -10665,13 +10667,32 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .button1{
-  width:150px;
+  width:200px;
   height:50px;
    float: left;
      margin-left:50%;
      margin-bottom:5%;
    }
-     
+
+   .btn-carousel {
+    color: #000;
+    background-color: #fed136;
+    border-color: #fed136;
+    position: absolute;
+    width:250px;
+    height:50px;
+       margin-left:-10%;
+       margin-top:-4%;
+    font-size: 22px;
+    font-weight: bolder;
+  
+  }
+  .btn-carousel:hover {
+    color: #fed136;
+    background-color: #000;
+    border-color: #000;
+  }
+  .     
 .footrow{
   /*padding-bottom: 10%;*/
 }
