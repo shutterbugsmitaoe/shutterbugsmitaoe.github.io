@@ -1,6 +1,8 @@
 
 
-<div style="text-align:center"><img src="assets/img/logos/LOGO-SVGwhite.png" height="100" /></div>
+<p align="center">
+<img src="assets/img/logos/LOGO-SVGwhite.png" height="100" />
+</p>
 
 <h1 align="center">🌐 Official Website of ShutterBugs MITAOE</h1>
 
