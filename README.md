@@ -5,9 +5,7 @@
 </p>
 
 <h1 align="center">🌐 Official Website of ShutterBugs MITAOE</h1>
-
-Website Link : https://shutterbugsmitaoe.github.io 
-
+<h4 align="center"> Website Link : <a> https://shutterbugsmitaoe.github.io</a> </h6>
 <h2 align="center">👥 Follow Us</h2>
 <p align="center">
 <a href="https://instagram.com/shutterbugs.mitaoe" target="_blank"><img height="28" src = "https://img.shields.io/badge/-Instagram-e95950?style=for-the-badge&logo=Instagram&logoColor=white"></a>
