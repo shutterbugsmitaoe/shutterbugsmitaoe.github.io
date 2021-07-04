@@ -4,8 +4,12 @@
 <img src="assets/img/logos/LOGO-SVGwhite.png" height="100" />
 </p>
 
-<h1 align="center">🌐 Official Website of ShutterBugs MITAOE</h1>
-<h4 align="center"> Website Link : <a> https://shutterbugsmitaoe.github.io</a> </h6>
+<h1 align="center">Official Website of ShutterBugs MITAOE</h1>
+
+<h2 align="center">🌐 Website</h2>
+<p align="center">
+<a href="https://shutterbugsmitaoe.github.io" target="_blank"><img height="28" src = "https://img.shields.io/badge/-https://shutterbugsmitaoe.github.io-fed136?style=for-the-badge"></a>
+</p>
 <h2 align="center">👥 Follow Us</h2>
 <p align="center">
 <a href="https://instagram.com/shutterbugs.mitaoe" target="_blank"><img height="28" src = "https://img.shields.io/badge/-Instagram-e95950?style=for-the-badge&logo=Instagram&logoColor=white"></a>
