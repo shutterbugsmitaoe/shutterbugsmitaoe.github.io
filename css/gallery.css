@@ -1,0 +1,103 @@
+html{
+    scroll-behavior: smooth !important;
+}
+
+nav{
+    height: 10%;
+
+}
+#mainNav .navbar-brand img{
+    height: 2.8rem;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.row .column{
+    flex: 33.3%;
+    width: auto;
+    overflow: hidden;
+    height: 100%;
+}
+.img {
+    position: relative;
+}
+.row .column img{
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98.2%;
+    height: 98.2%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-top: 3.5px;
+    margin-left: 3.5px;
+   opacity: 0;
+   transition: opacity 0.3s;
+}
+.overlay > h4{
+    color: #fed136;
+    font-style: italic;
+}
+.overlay:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width:768px) {
+    .row .column{
+        flex: 50%;
+    }
+    .overlay > h4{
+        font-size: 1rem;
+    }
+    .overlay > p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .row .column{
+        flex: 100%;
+    }
+    .navbar-brand{
+        padding: 0;
+    }
+    h3{
+        font-size: 1rem;
+        margin: 0;
+    }
+    #mainNav .navbar-brand img{
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    h3{
+        font-size: 1rem;
+    } 
+    
+    #mainNav{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link{
+        font-size: 0.7rem;
+    }
+    #mainNav .navbar-brand img{
+        height: 1.5rem;
+    }
+}
+
