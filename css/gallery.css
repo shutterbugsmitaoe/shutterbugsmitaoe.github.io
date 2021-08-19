@@ -17,10 +17,11 @@ nav{
 }
 
 .row .column{
-    flex: 33.3%;
+    flex: 33%;
     width: auto;
     overflow: hidden;
     height: 100%;
+    margin: 2px;
 }
 .img {
     position: relative;
