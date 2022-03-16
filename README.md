@@ -8,7 +8,7 @@
 
 <h2 align="center">🌐 Website</h2>
 <p align="center">
-<a href="https://shutterbugs.mitaoe.ac.in" target="_blank"><img height="28" src = "https://img.shields.io/badge/-https://shutterbugsmitaoe.github.io-fed136?style=for-the-badge"></a>
+<a href="https://shutterbugs.mitaoe.ac.in" target="_blank"><img height="28" src = "https://img.shields.io/badge/-https://shutterbugs.mitaoe.ac.in-fed136?style=for-the-badge"></a>
 </p>
 <h2 align="center">👥 Follow Us</h2>
 <p align="center">
