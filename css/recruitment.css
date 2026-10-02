@@ -1,0 +1,537 @@
+/* ==========================================================================
+   Shutterbugs MITAOE — Recruitment Section & Mobile Compatibility Stylesheet
+   Matches original light theme, #fed136 palette, and Bootstrap 4 styling.
+   Full responsive optimization for desktop, tablet, and mobile phones.
+   ========================================================================== */
+
+/* Universal Mobile Overflow Safeguards */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Recruitment Announcement Section */
+#recruitment {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eaeaea;
+  padding: 80px 0 60px 0;
+}
+
+.recruitment-heading {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  color: #212529;
+  margin-bottom: 0.75rem;
+}
+
+.recruitment-subheading {
+  font-family: "Droid Serif", "Roboto Slab", Georgia, serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #6c757d;
+  max-width: 780px;
+  margin: 0 auto 1.75rem auto;
+  line-height: 1.6;
+}
+
+/* Recruitment CTA Button - Properly Centered & Aligned */
+.recruitment-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem auto 2.5rem auto;
+  text-align: center;
+  width: 100%;
+}
+
+.btn-recruitment-apply {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #000000 !important;
+  background-color: #fed136;
+  border: 2px solid #fed136;
+  border-radius: 50px;
+  padding: 14px 42px;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 4px 12px rgba(254, 209, 54, 0.4);
+}
+
+.btn-recruitment-apply:hover,
+.btn-recruitment-apply:focus {
+  background-color: #fec503;
+  border-color: #fec503;
+  color: #000000 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(254, 209, 54, 0.55);
+}
+
+.btn-recruitment-apply:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 8px rgba(254, 209, 54, 0.3);
+}
+
+/* Form Container Card */
+.recruitment-form-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: left;
+}
+
+/* Form Section Headers */
+.form-section-title {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #212529;
+  border-bottom: 2px solid #f1f3f5;
+  padding-bottom: 12px;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-section-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fed136;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #343a40;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+.form-group label .required-star {
+  color: #dc3545;
+  margin-left: 2px;
+}
+
+/* Inputs & Form Controls */
+.recruitment-form-card .form-control,
+.recruitment-form-card .custom-select {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 10px 14px;
+  height: calc(1.5em + 1.2rem + 2px);
+  font-size: 0.95rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background-color: #ffffff;
+  color: #495057;
+}
+
+.recruitment-form-card textarea.form-control {
+  height: auto;
+  min-height: 110px;
+  resize: vertical;
+}
+
+.recruitment-form-card .form-control:focus,
+.recruitment-form-card .custom-select:focus {
+  border-color: #fed136;
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.25);
+  outline: 0;
+}
+
+/* Custom Checkboxes and Radios */
+.recruitment-form-card .custom-control {
+  margin-bottom: 0.65rem;
+  padding-left: 1.85rem;
+}
+
+.recruitment-form-card .custom-control-label {
+  font-weight: 400;
+  color: #495057;
+  cursor: pointer;
+  line-height: 1.5;
+  user-select: none;
+}
+
+.recruitment-form-card .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #fed136;
+  border-color: #fed136;
+}
+
+.recruitment-form-card .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.25);
+}
+
+.recruitment-form-card .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2.5' fill='%23000'/%3e%3c/svg%3e");
+}
+
+.recruitment-form-card .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+/* Character Counter */
+.char-counter {
+  font-size: 0.82rem;
+  color: #6c757d;
+  text-align: right;
+  margin-top: 0.25rem;
+}
+
+/* Field Validation Errors */
+.field-error-message {
+  display: none;
+  font-size: 0.85rem;
+  color: #dc3545;
+  margin-top: 0.35rem;
+}
+
+.is-invalid ~ .field-error-message,
+.has-error .field-error-message {
+  display: block;
+}
+
+.recruitment-form-card .form-control.is-invalid,
+.recruitment-form-card .custom-select.is-invalid {
+  border-color: #dc3545;
+}
+
+/* Submit Section */
+.recruitment-submit-area {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f1f3f5;
+}
+
+.btn-recruitment-submit {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #000000;
+  background-color: #fed136;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 44px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 4px 15px rgba(254, 209, 54, 0.45);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-recruitment-submit:hover:not(:disabled) {
+  background-color: #fec503;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(254, 209, 54, 0.6);
+}
+
+.btn-recruitment-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.submit-note {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-top: 0.85rem;
+}
+
+/* Success / Error Messages */
+.submission-alert {
+  display: none;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.submission-alert.alert-success {
+  background-color: #e8f5e9;
+  border: 1px solid #c8e6c9;
+  color: #1b5e20;
+}
+
+.submission-alert.alert-danger {
+  background-color: #ffebee;
+  border: 1px solid #ffcdd2;
+  color: #b71c1c;
+}
+
+.submission-alert .alert-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.submission-alert h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+/* ==========================================================================
+   Comprehensive Mobile & Tablet Responsive Rules (iOS / Android / Tablets)
+   ========================================================================== */
+
+/* Tablet & Mobile Screens (<= 991px) */
+@media (max-width: 991px) {
+  #mainNav {
+    background-color: #212529 !important;
+    padding: 0.55rem 1rem;
+  }
+
+  #mainNav .navbar-brand img {
+    height: 2.75rem;
+  }
+
+  #mainNav .navbar-toggler {
+    font-size: 0.85rem;
+    padding: 0.55rem 0.85rem;
+  }
+
+  #mainNav .navbar-nav {
+    padding-top: 0.85rem;
+    padding-bottom: 0.5rem;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  #mainNav .navbar-nav .nav-item:last-child .nav-link {
+    border-bottom: none;
+  }
+
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+    margin-top: 3.6rem !important;
+  }
+}
+
+/* Mobile Screens (<= 768px) */
+@media (max-width: 768px) {
+  /* Hero Carousel Proportion Fix for Mobile Phones */
+  header .carousel-item,
+  .carousel-item {
+    height: 48vh !important;
+    min-height: 250px !important;
+    max-height: 420px !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  /* Recruitment Section Mobile Spacing */
+  #recruitment {
+    padding: 55px 0 35px 0;
+  }
+
+  .recruitment-heading {
+    font-size: 1.85rem;
+    line-height: 1.3;
+    padding: 0 10px;
+  }
+
+  .recruitment-subheading {
+    font-size: 1.02rem;
+    line-height: 1.55;
+    padding: 0 12px;
+    margin-bottom: 1.5rem;
+  }
+
+  .recruitment-btn-container {
+    padding: 0 15px;
+    margin: 1.25rem auto 2rem auto;
+  }
+
+  .btn-recruitment-apply {
+    width: 100%;
+    max-width: 320px;
+    padding: 13px 20px;
+    font-size: 1.02rem;
+    min-height: 48px;
+  }
+
+  /* Form Card on Mobile Phones */
+  .recruitment-form-card {
+    padding: 24px 16px;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  .recruitment-form-card .section-heading {
+    font-size: 1.75rem !important;
+    line-height: 1.25;
+  }
+
+  .recruitment-form-card .section-subheading {
+    font-size: 1.05rem !important;
+    line-height: 1.5;
+  }
+
+  /* 16px font-size prevents aggressive iOS & Android browser auto-zoom on input focus */
+  .recruitment-form-card .form-control,
+  .recruitment-form-card .custom-select {
+    font-size: 16px !important;
+    height: calc(1.5em + 1.2rem + 2px);
+    padding: 9px 12px;
+  }
+
+  .recruitment-form-card textarea.form-control {
+    font-size: 16px !important;
+    min-height: 110px;
+  }
+
+  .form-section-title {
+    font-size: 1.15rem;
+    padding-bottom: 8px;
+    margin-top: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .form-section-badge {
+    width: 28px;
+    height: 28px;
+    font-size: 0.85rem;
+    margin-right: 10px;
+  }
+
+  /* Touch-friendly Checkbox and Radio tap areas */
+  .recruitment-form-card .custom-control {
+    margin-bottom: 0.85rem;
+    padding-left: 2rem;
+    min-height: 30px;
+  }
+
+  .recruitment-form-card .custom-control-label {
+    font-size: 0.95rem;
+    line-height: 1.45;
+    padding-top: 1px;
+  }
+
+  .recruitment-form-card .custom-control-label::before,
+  .recruitment-form-card .custom-control-label::after {
+    top: 0.15rem;
+    left: -2rem;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  /* Submit Button on Mobile */
+  .btn-recruitment-submit {
+    width: 100%;
+    max-width: 340px;
+    padding: 13px 20px;
+    font-size: 1.05rem;
+    min-height: 50px;
+  }
+
+  .submit-note {
+    font-size: 0.85rem;
+    padding: 0 10px;
+  }
+
+  /* About Section on Mobile */
+  #about {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .camera-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+  }
+
+  /* Features Grid on Mobile */
+  .card-feature-img-top {
+    height: 44vw;
+  }
+
+  /* Events Section Tabs on Mobile */
+  #events .nav-pills {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #events .nav-pills .nav-item {
+    margin: 4px;
+  }
+
+  #events .nav-pills .nav-link {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  /* Team Section Placeholder Card on Mobile */
+  #team .card {
+    padding: 22px 14px !important;
+  }
+
+  #team .card h4 {
+    font-size: 1.25rem;
+  }
+
+  /* Footer on Mobile */
+  footer {
+    padding-top: 1.5rem;
+  }
+
+  footer .btn-floating {
+    margin: 0.25rem !important;
+    font-size: 1.1rem;
+  }
+}
+
+/* Small Smartphone Screens (<= 420px, e.g. iPhone SE, compact Androids) */
+@media (max-width: 420px) {
+  .recruitment-heading {
+    font-size: 1.6rem;
+  }
+
+  .recruitment-form-card {
+    padding: 20px 12px;
+  }
+
+  .recruitment-form-card .section-heading {
+    font-size: 1.5rem !important;
+  }
+
+  .btn-recruitment-apply,
+  .btn-recruitment-submit {
+    font-size: 0.95rem;
+    padding: 12px 16px;
+  }
+
+  .form-section-title {
+    font-size: 1.05rem;
+  }
+}
